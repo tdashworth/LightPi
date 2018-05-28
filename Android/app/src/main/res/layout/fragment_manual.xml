@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ManualFragment">
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.larswerkman.holocolorpicker.SaturationBar
+        android:id="@+id/saturationbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picker"
+        android:layout_alignStart="@+id/picker"
+        android:layout_alignEnd="@+id/picker" />
+
+    <com.larswerkman.holocolorpicker.ValueBar
+        android:id="@+id/valuebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saturationbar"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/saturationbar"
+        android:layout_alignStart="@+id/saturationbar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favButton"
+        android:background="@drawable/ic_heart_outline_black_48dp"
+        android:backgroundTint="#ff0000"
+        android:contentDescription="Favourite"
+        android:layout_marginStart="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/valuebar"
+        android:layout_marginBottom="32dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setButton"
+        android:background="@drawable/ic_radio_tower_black_48dp"
+        android:backgroundTint="#6a6a6a"
+        android:contentDescription="Favourite"
+        android:layout_alignTop="@+id/favButton"
+        android:layout_alignEnd="@+id/valuebar"
+        android:layout_marginEnd="52dp" />
+
+
+</RelativeLayout>

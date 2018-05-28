@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ModesFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/presetTitle"
+        android:id="@+id/presetTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/presetGrid"
+        android:layout_below="@+id/presetTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:numColumns="3"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presetGrid"
+        android:layout_alignStart="@+id/presetGrid"
+        android:paddingTop="10dp"
+        android:id="@+id/seekLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Speed: "
+            android:id="@+id/textView" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/presetSeek"
+            android:layout_below="@+id/presetGrid"
+            android:layout_alignEnd="@+id/presetGrid"
+            android:visibility="visible"
+            android:layout_toEndOf="@+id/favouritesTitle"
+            android:layout_alignStart="@+id/favouritesTitle"
+            android:thumbTint="@color/colorPrimary"
+            android:progressTint="@color/colorPrimary"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/favouriteTitle"
+        android:id="@+id/favouritesTitle"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/seekLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favouritesGrid"
+        android:numColumns="3"
+        android:layout_below="@+id/favouritesTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+</RelativeLayout>

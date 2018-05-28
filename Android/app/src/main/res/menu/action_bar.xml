@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item android:id="@+id/action_bulb"
+        android:icon="@drawable/ic_lightbulb_outline_white_48dp"
+        android:title="@string/ActionConnect"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_default"
+        android:title="@string/ActionDefault"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/action_power"
+        android:title="@string/ActionPower"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/action_reboot"
+        android:title="@string/ActionReboot"
+        app:showAsAction="never">
+    </item>
+</menu>

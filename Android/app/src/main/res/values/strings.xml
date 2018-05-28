@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Light Pi</string>
+
+    <string name="mode">MODES</string>
+    <string name="sun">SUN</string>
+    <string name="manual">MANUAL</string>
+    <string name="ActionDefault">Set as default</string>
+    <string name="ActionPower">Lights off</string>
+    <string name="ActionReboot">Reboot</string>
+    <string name="ActionConnect">Connect</string>
+    <string name="presetTitle">Presets</string>
+    <string name="favouriteTitle">Favourites</string>
+
+</resources>
